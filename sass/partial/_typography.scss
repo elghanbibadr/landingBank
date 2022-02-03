@@ -1,0 +1,24 @@
+h1,
+h2,
+h3,
+h4 {
+  color: $color-primary;
+  font-weight: 500;
+  // this is not the right font for the heding don't forget to change it later
+}
+h1 {
+  font-size: 2.3rem;
+  @include desktop {
+    font-size: 2.1rem;
+  }
+}
+
+p {
+  color: $color-text;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-block: 1rem;
+  @include desktop {
+    font-size: 1rem;
+  }
+}

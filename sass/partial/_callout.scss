@@ -1,0 +1,18 @@
+.callout {
+  background-color: #f4f5f7;
+  @include textCenter;
+  padding: 1rem;
+  @include desktop {
+    text-align: left;
+    padding-inline: 4rem;
+  }
+  &__header {
+    margin-block: 2rem;
+    @include desktop {
+      margin-block: 4rem;
+    }
+  }
+  h2 {
+    margin-block: 1.5rem;
+  }
+}

@@ -1,0 +1,12 @@
+@include desktop {
+  .grid {
+    display: grid;
+    column-gap: 1rem;
+  }
+  .grid--cols-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid--cols-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,26 @@
+$color-primary: hsl(233, 26%, 24%);
+$btn-color: hsl(136, 65%, 51%);
+$accent-color: hsl(192, 70%, 51%);
+$color-body: #fafafa;
+$color-text: #9b9a9f;
+$breaking-point: 768px;
+
+@mixin desktop {
+  @media (min-width: $breaking-point) {
+    @content;
+  }
+}
+@mixin textCenter {
+  text-align: center;
+  @include desktop {
+    text-align: left;
+  }
+}
+@mixin flex($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+body {
+  font-family: "Barlow", sans-serif;
+}

@@ -1,0 +1,23 @@
+.hero {
+  padding: 1rem;
+  background-color: #fafafa;
+  @include textCenter;
+  background: url(../images/bg-intro-mobile.svg) no-repeat;
+  background-position: 100% 0;
+  &__img {
+    width: 100%;
+    grid-area: 1/2/1/3;
+  }
+  &__content {
+    margin-top: 2rem;
+    p {
+      margin-block: 1rem;
+    }
+  }
+  @include desktop {
+    &__content {
+      margin: 7rem 0 0 2rem;
+      text-align: left;
+    }
+  }
+}
