@@ -1,0 +1,16 @@
+.features {
+  padding: 1rem;
+  @include textCenter;
+  h1 {
+    margin-bottom: 2rem;
+  }
+  img {
+    width: 100%;
+  }
+  h3 {
+    margin-top: 0.5rem;
+  }
+  @include desktop {
+    padding-inline: 2rem;
+  }
+}

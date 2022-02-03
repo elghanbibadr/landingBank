@@ -1,0 +1,25 @@
+.footer {
+  background-color: $color-primary;
+  padding: 1rem;
+  @include textCenter;
+  & .media {
+    margin-block: 1rem;
+    @include desktop {
+      margin-top: 2rem;
+    }
+  }
+  &__list ul {
+    list-style: none;
+    li {
+      color: $color-body;
+      margin-block: 0.8rem;
+    }
+  }
+  & .btn,
+  &__logo {
+    margin-top: 1rem;
+  }
+  @include desktop {
+    padding-inline: 2rem;
+  }
+}
