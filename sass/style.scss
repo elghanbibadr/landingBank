@@ -8,3 +8,41 @@
 @import "./partial/features";
 @import "./partial/footer";
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Fraunces:wght@700;900&display=swap");
+.nav {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .container {
+    width: 100%;
+    @include textCenter;
+
+    ul {
+      list-style: none;
+    }
+    li {
+      margin-block: 1rem;
+      color: $color-primary;
+    }
+  }
+  @include desktop {
+    & .menu {
+      display: none;
+    }
+    flex-wrap: nowrap;
+  }
+}
+#collapsible__content {
+  justify-content: space-around;
+  @include desktop {
+    width: auto;
+  }
+}
+
+.collapsible--expanded .container {
+  max-height: 0;
+  overflow: hidden;
+  @include desktop {
+    max-height: 100vh;
+  }
+}
