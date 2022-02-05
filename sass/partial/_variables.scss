@@ -3,7 +3,7 @@ $btn-color: hsl(136, 65%, 51%);
 $accent-color: hsl(192, 70%, 51%);
 $color-body: #fafafa;
 $color-text: #9b9a9f;
-$breaking-point: 700px;
+$breaking-point: 768px;
 
 @mixin desktop {
   @media (min-width: $breaking-point) {
@@ -23,4 +23,5 @@ $breaking-point: 700px;
 }
 body {
   font-family: "Barlow", sans-serif;
+  cursor: pointer;
 }

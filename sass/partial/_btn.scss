@@ -1,8 +1,13 @@
 .btn {
-  background: linear-gradient(to right, $btn-color, #2cb9cd);
+  background: linear-gradient(to right, hsl(136, 65%, 51%), #2bb0bf);
   padding: 0.7rem 1.5rem;
   color: white;
   border-radius: 30px;
   border: 0;
   font-weight: bold;
+  transition: 1s;
+  cursor: pointer;
+  &:hover {
+    background: #81dfc6;
+  }
 }

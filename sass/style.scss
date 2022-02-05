@@ -13,9 +13,14 @@
   padding: 1rem;
   justify-content: space-between;
   flex-wrap: wrap;
+  color: purple;
+
   .container {
     width: 100%;
     @include textCenter;
+    @include desktop {
+      display: flex;
+    }
 
     ul {
       list-style: none;
@@ -23,6 +28,10 @@
     li {
       margin-block: 1rem;
       color: $color-primary;
+      @include desktop {
+        display: inline;
+        margin-inline: 1rem;
+      }
     }
   }
   @include desktop {
@@ -33,7 +42,7 @@
   }
 }
 #collapsible__content {
-  justify-content: space-around;
+  justify-content: space-evenly;
   @include desktop {
     width: auto;
   }
@@ -44,5 +53,9 @@
   overflow: hidden;
   @include desktop {
     max-height: 100vh;
+    .btn {
+      margin-left: 4rem;
+      width: auto;
+    }
   }
 }
